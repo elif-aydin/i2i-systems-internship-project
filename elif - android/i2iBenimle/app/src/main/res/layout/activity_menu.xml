@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/white"
+    tools:context="i2icell.i2ibenimle.activity.MenuActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="150dp"
+        android:src="@drawable/i2ilogo"
+
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
+        android:text="i2i Benimle"
+        android:textSize="25sp"
+        android:textColor="#5AD427"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/butttonKalanTl"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:background="@drawable/my_button_bg"
+        android:elevation="0dp"
+        android:text="Kalan TL"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/butttonKalanDk"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Kalan Dakika"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/butttonKalanTl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/butttonKalanSMS"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/butttonKalanDk"
+        android:layout_alignStart="@+id/butttonKalanDk"
+        android:layout_below="@+id/butttonKalanDk"
+        android:background="@drawable/my_button_bg"
+        android:text="Kalan SMS"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butttonKalanİnt"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/butttonKalanSMS"
+        android:background="@drawable/my_button_bg"
+        android:text="Kalan İnternet"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/butttonTarife"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Tarifeler"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/butttonKalanİnt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/butttonKampanya"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Kampanyalar"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/butttonTarife" />
+
+    <Button
+        android:id="@+id/butttonCikis"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="143dp"
+        android:layout_height="40dp"
+        android:background="@drawable/my_button_bg"
+        android:text="Çıkış Yap"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:layout_below="@+id/butttonKampanya"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular"
+        android:layout_marginRight="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_above="@+id/butttonTarife"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/butttonTarife"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/circular2" />
+
+    <TextView
+        android:id="@+id/progressBarText"
+        android:background="#00000000"
+        android:layout_alignLeft="@id/progressBar2"
+        android:layout_alignTop="@id/progressBar2"
+        android:layout_alignRight="@id/progressBar2"
+        android:layout_alignBottom="@id/progressBar2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+    />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:text="TextView"
+        android:visibility="visible"
+        android:scrollbars = "vertical"
+        android:maxLines = "20"
+        android:layout_above="@+id/butttonCikis"
+        android:layout_alignTop="@+id/progressBar" />
+
+    <TextView
+        android:id="@+id/textViewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/progressBar"
+        android:layout_alignLeft="@+id/progressBar"
+        android:layout_alignRight="@+id/progressBar"
+        android:layout_alignStart="@+id/progressBar"
+        android:layout_below="@+id/progressBar"
+        android:text="TextView"
+        android:layout_alignBottom="@+id/butttonCikis" />
+
+</RelativeLayout>
+
